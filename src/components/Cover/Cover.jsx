@@ -40,7 +40,7 @@ const Cover = () => {
     }
 
     const handlePasswordBlur = () => {
-        // Restaurar el efecto de desenfoque a 10px cuando el campo pierda el foco
+        // Restore the blur effect to 10px when the field loses focus
         setBlur(10);
         applyBlurStyle(10);
     };
