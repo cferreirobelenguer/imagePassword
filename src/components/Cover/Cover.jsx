@@ -39,6 +39,16 @@ const Cover = () => {
         console.log(data)
     }
 
+    const handlePasswordBlur = () => {
+        // Restaurar el efecto de desenfoque a 10px cuando el campo pierda el foco
+        setBlur(10);
+        applyBlurStyle(10);
+    };
+    
+    const applyBlurStyle = (blurValue) => {
+        document.body.style.backdropFilter = `blur(${blurValue}px)`;
+    };
+
     return (
         <div className="cover-container">
             <div className='cover-text'>
@@ -52,7 +62,7 @@ const Cover = () => {
                 </div>
                 <div className='cover-input'>
                     <label htmlFor='password'>Password:</label>
-                    <input type="password" maxLength={15} placeholder="Enter Password" className='input-style' onChange={handlePassword}></input>
+                    <input type="password" maxLength={15} placeholder="Enter Password" className='input-style' onInput={handlePassword} onBlur={handlePasswordBlur}></input>
                 </div>
             </div>
             <div className='cover-button'>
