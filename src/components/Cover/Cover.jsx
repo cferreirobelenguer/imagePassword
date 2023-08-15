@@ -31,7 +31,7 @@ const Cover = () => {
         } else {
             const newBlurValue = 10-inputValue.length;
             setBlur(newBlurValue);
-            document.body.style.backdropFilter = `blur(${newBlurValue}px)`;
+            document.body.style.backdropFilter = `blur(${blur}px)`;
         }
     }
 
