@@ -1,4 +1,4 @@
-# 50 proyects 50 days Image Password Strength
+# 50 projects 50 days Image Password Strength
 
 ## Technologies
 
